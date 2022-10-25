@@ -1,45 +1,8 @@
-const characters = [
-  {
-    names: 'Luke Skywalker',
-    height: '172',
-    mass: '77',
-    eye_color: 'blue',
-    gender: 'male',
-  },
-  {
-    names: 'Darth Vader',
-    height: '202',
-    mass: '136',
-    eye_color: 'yellow',
-    gender: 'male',
-  },
-  {
-    names: 'Leia Organa',
-    height: '150',
-    mass: '49',
-    eye_color: 'blue',
-    gender: 'female',
-  },
-  {
-    names: 'Angel',
-    height: '163',
-    mass: '55',
-    eye_color: 'blue',
-    gender: 'female',
-  },
-];
+const user = {};
 
-const names = characters.map((character) => character.names);
-console.log(names);
+user.name = 'Ivan';
+user.age = 30;
 
-const heights = characters.map((character) => character.height);
-console.log(heights);
+user['full name'] = 'Ivan Ivanov';
 
-const twoStats = characters.map((character) => ({
-  name: character.names,
-  height: character.height,
-}));
-console.log(twoStats);
-
-const firstNames = characters.map((character) => character.names.split(' ')[0]);
-console.log(firstNames);
+console.log(user.name);
